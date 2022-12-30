@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8080
 app.use(morgan('tiny'))
     //  Connection mongoDB
 connectDB();
-
+app.use(express.json())
 //Parser request to body-Parser
 app.use(bodyParser.urlencoded({ extended: true }))
 

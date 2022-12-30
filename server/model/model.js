@@ -15,4 +15,6 @@ var schema = new mongoose.Schema({
     gender: String,
     status: String
 })
-const Userdb = mongoose.model('CWMBlogs', schema);
+const Userdb = mongoose.model('userdb', schema);
+
+module.exports = Userdb;
