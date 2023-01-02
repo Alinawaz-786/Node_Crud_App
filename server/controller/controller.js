@@ -13,7 +13,7 @@ exports.create = (req, res) => {
             status: req.body.status
         })
         //save user in the database
-
+    
     user.save(user).then(data => {
         // res.send(data)
         res.redirect('/');

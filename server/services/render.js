@@ -13,6 +13,11 @@ exports.add_user = (req, res) =>{
     res.render('add_user');
 }
 
+exports.create_employee = (req, res) =>{
+    res.render('Employee/create');
+}
+
+
 exports.update_user = (req, res) =>{
     axios.get('http://localhost:3000/api/users', { params : { id : req.query.id }})
         .then(function(userdata){
